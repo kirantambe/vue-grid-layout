@@ -92,7 +92,7 @@
                 type: Boolean,
                 default: true
             },
-            value: {
+            modelValue: {
                 type: Array,
                 required: true,
             },
@@ -136,7 +136,7 @@
                 layouts: {}, // array to store all layouts from different breakpoints
                 lastBreakpoint: null, // store last active breakpoint
                 originalLayout: null, // store original Layout
-                layout: JSON.parse(JSON.stringify(this.value))
+                layout: JSON.parse(JSON.stringify(this.modelValue))
             };
         },
         created () {
